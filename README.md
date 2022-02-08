@@ -30,7 +30,7 @@
 
 ## Overview
 
-![](upload_images_gif.gif)
+![](https://github.com/guysos922/X-O-GAME/blob/master/tic%20tac%20toe.gif)
 
 
 ### Built With
