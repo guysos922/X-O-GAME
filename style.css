@@ -1,0 +1,308 @@
+html, body {
+    position: relative;
+    height: 100%;
+
+    background: #FAFAFB;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 2000px) {
+    .background_rect{ width: 690px; height: 690px;top:15%;}
+    .rect{width: 230px;height: 230px;}
+    span.x{font-size:200px;line-height: 230px;}
+    div.o{width: 170px; height: 170px; left: calc(50% - 170px/2);top: calc(50% - 170px/2);}
+    .wining_rect{width: 564px; height: 287px;}
+    .wining_rect b{
+        position: absolute;
+        width: 320px;
+        height: 54px;
+        left: calc(50% - 320px/2);
+        top: 25%;
+        
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 54px;
+        /* identical to box height */
+        
+        display: flex;
+        align-items: center;
+        
+        color: #787878;
+    }
+    .wining_rect span{
+        position: absolute;
+        width: 100%;
+        height: 54px;
+        top: 45%;
+        text-align: center;
+        
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 36px;
+        /* identical to box height */
+    
+        align-items: center;
+    
+        color: #000000;
+    }
+
+    .wining_rect button{
+        position: absolute;
+        width: 128px;
+        height: 51px;
+        left: calc(50% - 128px/2);
+        top: 70%;
+    
+        background: #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+    }
+
+    .wining_rect button span{
+        position: absolute;
+        width: 81px;
+        height: 36px;
+        left: calc(50% - 81px/2);
+        top: calc(50% - 36px/2);
+    
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        /* identical to box height */
+    
+        display: flex;
+        align-items: center;
+    
+        color: #FFFFFF;
+    
+        text-shadow: 0px 0px 10px #FFFFFF;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .background_rect{ width: 345px; height: 345px;top:30%;}
+    .rect{width: 115px;height: 115px;}
+    span.x{font-size:120px;line-height: 115px;}
+    div.o{width: 90px; height: 90px;left: calc(50% - 100px/2);top: calc(50% - 100px/2);}
+    .wining_rect{width: 232px; height: 144px;top:40%;}
+    .wining_rect b{
+        position: absolute;
+        width: auto;
+        height: 30px;
+        left: calc(50% - 151px/2);
+        top: 25%;
+        
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 30px;
+        /* identical to box height */
+        
+        display: flex;
+        align-items: center;
+        
+        color: #787878;
+    }
+
+    .wining_rect span{
+        position: absolute;
+        width: auto;
+        height: 30px;
+        top: 45%;
+        left: calc(50% - 88px/2);
+        text-align: center;
+        
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 30px;
+        /* identical to box height */
+    
+        align-items: center;
+    
+        color: #000000;
+    }
+
+    .wining_rect button{
+        position: absolute;
+        width: 64px;
+        height: 25px;
+        left: calc(50% - 64px/2);
+        top: 70%;
+    
+        background: #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+    }
+    .wining_rect button span{
+        position: absolute;
+        width: auto;
+        height: 25px;
+        left: calc(50% - 50px/2);
+        top: calc(50% - 25px/2);
+    
+        font-family: Poppins;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 7px;
+        /* identical to box height */
+    
+        display: flex;
+        align-items: center;
+    
+        color: #FFFFFF;
+    
+        text-shadow: 0px 0px 10px #FFFFFF;
+    }
+}
+
+h1{
+    position: absolute;
+    width: 237px;
+    height: 54px;
+    left: calc(50% - 237px/2);
+    top: 5%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #D1D1D1;
+}
+
+.background_rect{
+    position: relative;
+    display: none;
+    margin: auto;
+    
+    background: #F1F1F1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.rect{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+    
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 0px 0px 0px 0px;
+}
+
+#rect_0{
+    border-radius: 20px 0px 0px 0px;
+}
+
+#rect_1{
+    left: 33.33%;
+    border-radius: 0px 0px 0px 0px;
+}
+
+#rect_2{
+    left: 66.66%;
+    border-radius: 0px 20px 0px 0px;
+}
+
+#rect_3{
+    top: 33.33%;
+    border-radius: 0px 0px 0px 0px;
+}
+
+#rect_4{
+    left: 33.33%;
+    top:33.33%;
+    border-radius: 0px 0px 0px 0px;
+}
+
+#rect_5{
+    left: 66.66%;
+    top:33.33%;
+    border-radius: 0px 0px 0px 0px;
+}
+
+#rect_6{
+    top: 66.66%;
+    border-radius: 0px 0px 0px 20px;
+}
+
+#rect_7{
+    top: 66.66%;
+    left: 33.33%;
+    border-radius: 0px 0px 0px 0px;
+}
+
+#rect_8{
+    top: 66.66%;
+    left: 66.66%;
+    border-radius: 0px 0px 20px 0px;
+}
+
+
+
+
+span.x{
+    position: absolute;
+
+    vertical-align: middle;
+    text-align: center;
+    
+    width: 100%;
+    height: 100%;
+}
+
+div.o{
+    position: absolute;
+
+    border: 6px solid #000000;
+    -webkit-border-radius: 170px;
+    -moz-border-radius: 170px;
+    border-radius: 170px;
+}
+
+#credits{
+    position: absolute;
+    width: 282px;
+    height: 36px;
+    left: calc(50% - 282px/2);
+    top: 95%;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #D1D1D1;
+}
+
+.wining_rect{
+    position: relative;
+    margin: auto;
+
+    background: #F1F1F1;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    display: block;
+}
+
+
+
+
+
